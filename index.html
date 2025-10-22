@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple work timer to track elapsed time for processes.">
+
+    <title>Work Timer</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div id="head-container">
+        <h1>Time Study Helper</h1>
+    </div>
+    
+    <div id="stopwatch-display-container">
+        <div>
+            <h2>Total Elapsed Time:</h2>
+            <p id="stopwatch-total-elapsed-time">0:00:00.0</p>
+        </div>
+        <div>
+            <h2>Current Process:</h2>
+            <p id="stopwatch-current-process-time">0:00:00.0</p>
+        </div>
+    </div>
+
+    <!-- New current task indicator -->
+    <div id="current-task-container">
+        <h2>Currently Timing: <span id="current-task-display">None</span></h2>
+    </div>
+
+    <div id="task-definition-container">
+        <h2>Task Elements</h2>
+        <input type="text" id="element-input" placeholder="Enter a task element">
+        <button id="add-element-button">Add Element</button>
+        <ul id="element-list"></ul>
+    </div>
+
+    <!-- New element progress bar -->
+    <div id="element-progress-container">
+        <h3>Element Completion:</h3>
+        <div id="element-progress-bar">
+            <div id="element-progress"></div>
+        </div>
+        <div id="element-progress-text">0/0 (0%)</div>
+    </div>
+
+    <div id="process-details-container">
+        <h2>Process Details</h2>
+        <input type="text" id="category-input" placeholder="Category (e.g., Room 101)">
+        <input type="text" id="notes-input" placeholder="Notes">
+        <input type="number" id="rating-input" placeholder="Rating (%)" value="100" min="0" max="100">
+    </div>
+
+    <div id="stopwatch-controls-container">
+        <button id="start-button">Start New Process</button>
+        <button id="pause-button">Pause</button>
+        <button id="reset-button">Restart Time</button>
+        <button id="clear-button">Clear Table</button>
+        <button id="export-button">Export Times (CSV)</button>
+        <button id="delay-button" title="Pause the timer for a delay period (e.g., breaks or interruptions)">Start Delay</button>
+    </div>
+
+    <div id="entries-table-container">
+        <table id="entries-table">
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Category</th>
+                    <th>Start Time</th>
+                    <th>Stop Time</th>
+                    <th>Observed Time</th>
+                    <th>Rating (%)</th>
+                    <th>Normal Time</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Log entries will go here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Make sure these paths match your actual file structure -->
+    <script src="js/Timer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
