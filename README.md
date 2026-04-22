@@ -1,7 +1,7 @@
 # time-motion-study-helper
 
 Overview
-  - A simple tool for conducting time and motion studies, initially developed for housekeeping operations to optimize staff allocation across different areas. Track, measure, and analyze task durations to improve operational efficiency.
+  - A simple tool for conducting time and motion studies. A personal project I used for housekeeping operations to optimize staff allocation across different areas. Track, measure, and analyze task durations to improve operational efficiency.
 
 Key Features:
   - Task Management: Create custom elements to track specific housekeeping tasks
@@ -10,7 +10,3 @@ Key Features:
   - Visual Progress: Track completion status with progress bar
   - Export Capability: Save results to CSV for further analysis
 
-Installation:
-
-  - Download files and open index.html in any modern browser, or
-  - Host on GitHub Pages or any web server
