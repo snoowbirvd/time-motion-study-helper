@@ -1,4 +1,4 @@
-# time-motion-study-helper
+# time-motion-study-tool
 
 Overview
   - A simple tool for conducting time and motion studies. A personal project I used for housekeeping operations to optimize staff allocation across different areas. Track, measure, and analyze task durations to improve operational efficiency.
